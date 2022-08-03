@@ -3,7 +3,7 @@ function anaToVori(anas) {
     if (typeof anas != 'number') {
         return 'Type of input is wrong, Input a number';
     }
-    if (anas < 0) {
+    else if (anas < 0) {
         return 'Type of input is wrong, Input a positive number';
     }
     var vori = anas / 16;
@@ -18,19 +18,19 @@ function pandaCost(singaraQuantity, somuchaQuantity, jilapiQuantity) {
     if (typeof singaraQuantity != 'number') {
         return 'Type of input is wrong, Input a number';
     }
-    if (singaraQuantity < 0) {
+    else if (singaraQuantity < 0) {
         return 'Type of input is wrong, Input a positive number';
     }
-    if (typeof somuchaQuantity != 'number') {
+    else if (typeof somuchaQuantity != 'number') {
         return 'Type of input is wrong, Input a number';
     }
-    if (somuchaQuantity < 0) {
+    else if (somuchaQuantity < 0) {
         return 'Type of input is wrong, Input a positive number';
     }
-    if (typeof jilapiQuantity != 'number') {
+    else if (typeof jilapiQuantity != 'number') {
         return 'Type of input is wrong, Input a number';
     }
-    if (jilapiQuantity < 0) {
+    else if (jilapiQuantity < 0) {
         return 'Type of input is wrong, Input a positive number';
     }
     const singaraPrice = 7;
@@ -50,7 +50,7 @@ function picnicBudget(person) {
     if (typeof person != 'number') {
         return 'Type of input is wrong, Input a number';
     }
-    if (person < 0) {
+    else if (person < 0) {
         return 'Type of input is wrong, Input a positive number';
     }
     const first100Rate = 5000;
@@ -96,4 +96,13 @@ function oddFriend(names) {
 const friendList = ['Soykot', 'Nokib', 'Tamjid', 'Mehedi', 'Ronju'];
 const closedFriend = oddFriend(friendList);
 console.log(closedFriend);
+
+// recursion 
+function factorial(i) {
+    if (i == 1) {
+        return 1;
+    }
+    return i * factorial(--i)
+}
+console.log(factorial(5))
 
