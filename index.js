@@ -11,7 +11,7 @@ function anaToVori(anas) {
 }
 var microUnitAnas = 128;
 var macroUnitVori = anaToVori(microUnitAnas);
-console.log(macroUnitVori);
+// console.log(macroUnitVori);
 
 // panda order cost
 function pandaCost(singaraQuantity, somuchaQuantity, jilapiQuantity) {
@@ -43,7 +43,7 @@ function pandaCost(singaraQuantity, somuchaQuantity, jilapiQuantity) {
     return totalCost;
 }
 const payBills = pandaCost(5, 8, 3);
-console.log(payBills);
+// console.log(payBills);
 
 // picnic budget
 function picnicBudget(person) {
@@ -77,7 +77,7 @@ function picnicBudget(person) {
     }
 }
 var totalBudget = picnicBudget(240);
-console.log(totalBudget);
+// console.log(totalBudget);
 
 // odd name friend
 function oddFriend(names) {
@@ -95,7 +95,7 @@ function oddFriend(names) {
 }
 const friendList = ['Soykot', 'Nokib', 'Tamjid', 'Mehedi', 'Ronju'];
 const closedFriend = oddFriend(friendList);
-console.log(closedFriend);
+// console.log(closedFriend);
 
 // recursion 
 function factorial(i) {
@@ -112,7 +112,7 @@ const products = [
     { name: 'highschool pen', price: 15, color: 'green' },
     { name: 'greepar pen', price: 5, color: 'white' },
     { name: 'basundhara khata', price: 40, color: 'yellow' },
-    { name: 'sonali khata', price: 50, color: 'offwet' },
+    { name: 'sonali khata', price: 50, color: 'offwet' }
 ]
 function searchProduct(products, search) {
     let result = [];
@@ -127,3 +127,17 @@ const matchedProdcut = searchProduct(products, 'khata');
 // console.log(matchedProdcut);
 
 
+const items = [
+    { name: 'matador pen', price: 100, color: 'black' },
+    { name: 'highschool pen', price: 200, color: 'green' },
+    { name: 'greepar pen', price: 350, color: 'white' },
+    { name: 'basundhara khata', price: 400, color: 'yellow' },
+    { name: 'sonali khata', price: 500, color: 'offwet' }
+];
+for (const item of items) {
+    if (item.price < 300) {
+        break;
+    }
+    console.log(item);
+}
+console.log('hello');
