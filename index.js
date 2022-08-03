@@ -104,5 +104,26 @@ function factorial(i) {
     }
     return i * factorial(--i)
 }
-console.log(factorial(5))
+// console.log(factorial(5))
+
+// search in a array 
+const products = [
+    { name: 'matador pen', price: 10, color: 'black' },
+    { name: 'highschool pen', price: 15, color: 'green' },
+    { name: 'greepar pen', price: 5, color: 'white' },
+    { name: 'basundhara khata', price: 40, color: 'yellow' },
+    { name: 'sonali khata', price: 50, color: 'offwet' },
+]
+function searchProduct(products, search) {
+    let result = [];
+    for (const product of products) {
+        if (product.name.includes(search)) {
+            result.push(product);
+        }
+    }
+    return result;
+}
+const matchedProdcut = searchProduct(products, 'khata');
+// console.log(matchedProdcut);
+
 
