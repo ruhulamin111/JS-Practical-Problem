@@ -135,9 +135,16 @@ const items = [
     { name: 'sonali khata', price: 500, color: 'offwet' }
 ];
 for (const item of items) {
-    if (item.price < 300) {
+    if (item.price > 300) {
         break;
     }
-    console.log(item);
+    // console.log(item);
 }
-console.log('hello');
+for (const item of items) {
+    if (item.price < 300) {
+        continue;
+    }
+    // console.log(item);
+}
+
+
